@@ -1,0 +1,16 @@
+{
+    "pipeline": {
+      "name": "frames"
+    },
+    "description": "A pipeline that performs conversts mpg to png frames with the OpenCV library.",
+    "transform": {
+      "cmd": [ "python3", "/frames.py" ],
+      "image": "anaisdg/opencv:1.1"
+    },
+    "input": {
+      "pfs": {
+        "repo": "videos",
+        "glob": "/*"
+      }
+    }
+  }
